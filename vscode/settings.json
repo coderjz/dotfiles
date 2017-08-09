@@ -1,0 +1,57 @@
+{
+    "window.zoomLevel": -0.8,
+    "editor.fontSize": 13,
+    "editor.fontLigatures": true,
+    "editor.fontFamily": "Fira Code",
+
+    "vim.ignorecase": false,
+    "vim.hlsearch": true,
+    "vim.incsearch": false,
+    "vim.insertModeKeyBindings": [
+        {
+            "before": ["j","j"],
+            "after": ["<Esc>"]
+        }
+    ],
+    "vim.leader": "<space>",
+    "vim.otherModesKeyBindingsNonRecursive":[
+        {
+            "before": [";"],
+            "after": [":"]
+        },
+        {
+            "before": ["<leader>", "w"],
+            "after": ["<C-w>", "<C-w>"]
+        },
+        {
+            "before": ["<leader>", "j"],
+            "after": [],
+            "commands": [
+                {
+                    "command": "editor.action.goToDeclaration"
+                }
+            ]
+        },
+        {
+            "before": ["<leader>", "k"],
+            "after": [],
+            "commands": [
+                {
+                    "command": "workbench.action.navigateBack"
+                }
+            ]
+        },
+        {
+            "before": ["<leader>", "p"],
+            "after": [],
+            "commands": [
+                {
+                    "command": "editor.action.previewDeclaration"
+                }
+            ]
+        }
+    ],
+    "go.formatTool": "goimports",
+    "go.formatOnSave": true,
+    "workbench.iconTheme": "vs-minimal"
+}
